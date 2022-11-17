@@ -1,0 +1,9 @@
+   0 date > system_state.txt
+   1 df -h | head -2 >> system_state.txt 
+   2 history | tail -5 >> system_state.txt 
+   3 cat /proc/cpuinfo | grep vendor >> system_state.txt 
+   4 vi system_state.txt 
+   5 ps > processes.txt
+   6 cat processes.txt | grep : | wc -l >> system_state.txt 
+   7 cat system_state.txt 
+   8 history > history.txt
